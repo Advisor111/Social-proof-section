@@ -1,0 +1,144 @@
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.container {
+    padding: 60px 130px;
+    margin: auto;
+}
+/* end global rules */
+.bkg {
+    position: fixed;
+    z-index: -1;
+}
+.bkg.b {
+    right: 0;
+    bottom: 0;
+}
+.bkgm {
+    display: none;
+}
+.up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text {
+    max-width: 450px;
+}
+.text h2 {
+    font-size: 50px;
+    color: #511f50;
+}
+.up .text p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.5;
+}
+.stars {
+    width: 450px;
+}
+.rib {
+    background-color: #f7f2f8;
+    color: #511f50;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.rib:nth-child(2) {
+    margin-left: -50px;
+}
+.rib:first-of-type {
+    margin-left: -100px;
+}
+.rib .a-l {
+    padding-right: 20px;
+}
+.under {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.card {
+    background-color: #511f50;
+    color: white;
+    padding: 35px;
+    border-radius: 7px;
+    width: 365px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.card:nth-child(2) {
+    margin-top: 20px;
+}
+.card:last-of-type {
+    margin-top: 40px;
+}
+.dit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pho {
+    border-radius: 50%;
+    width: 45px;
+    margin-right: 20px;
+}
+.name h4:last-of-type {
+    line-height: 1.2;
+    color: #ae3b9a;
+}
+.card .text p {
+    line-height: 1.46;
+}
+@media (max-width: 760px) {
+    .container {
+        padding: 60px 20px;
+    }
+    .bkg.t {
+        display: none;
+    }
+    .bkgm {
+        position: fixed;
+        display: block;
+        z-index: -1;
+    }
+    .up {
+        justify-content: center;
+        text-align: center;
+    }
+    .text h2 {
+        font-size: 35px;
+    }
+    .stars {
+        width: 100%;
+    }
+    .rib {
+        width: 100%;
+        justify-content: center;
+    }
+    .rib:nth-child(2) {
+        margin-left: 0;
+    }
+    .rib:first-of-type {
+        margin-left: 0;
+    }
+    .under {
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+    }
+}
